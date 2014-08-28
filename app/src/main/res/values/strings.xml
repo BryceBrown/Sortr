@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Teamistr</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Teamistr</string>
+    <string name="plus_sign">+</string>
+    <string name="edit">Edit</string>
+    <string name="edit_dialog_teams">Edit</string>
+    <string-array name="team_edit_options">
+        <item >Edit List Name</item>
+        <item >Add Team Name</item>
+        
+    </string-array>
+    <string-array name="player_edit_options">
+        <item>Edit List Name</item>
+        <item>Add Person</item>
+    </string-array>
+        <string name="save">Save</string>
+        <string name="person_list">Person List</string>
+        <string name="sort">Sort</string>
+        <string name="email_list">Email List</string>
+
+</resources>

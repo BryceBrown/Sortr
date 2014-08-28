@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TabHost
+        android:id="@+id/tab_host"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/sort_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+               
+                    <RelativeLayout
+                        android:id="@+id/People"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                        
+                        <Button android:id="@+id/AddButton"
+                            android:text="@string/plus_sign"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp" />
+                        
+	                    <ListView
+	                        android:id="@+id/PersonList"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_below="@+id/AddButton" >
+
+						</ListView>
+
+    
+					</RelativeLayout>
+					
+              <RelativeLayout
+                        android:id="@+id/Teams"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                        
+                        <Button android:id="@+id/AddTeamsButton"
+                            android:text="@string/plus_sign"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp" />
+                        
+                    
+	                    <ListView
+	                        android:id="@+id/TeamList"
+	                        android:layout_below="@+id/AddTeamsButton"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent" >
+						</ListView>
+
+    
+					</RelativeLayout>
+					
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <Button
+        android:id="@+id/sort_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sort" />
+
+
+
+</RelativeLayout>
